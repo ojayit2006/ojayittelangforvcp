@@ -34,7 +34,7 @@ export default function WhyMePage() {
         </div>
 
         <div className="mt-14">
-          <Button href="/track-record" variant="primary">
+          <Button href="/testimonials" variant="primary">
             See the Receipts
           </Button>
         </div>

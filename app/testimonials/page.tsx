@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import Button from "@/components/ui/Button";
 import { Plus, Quote } from "lucide-react";
@@ -10,7 +11,7 @@ export default function TestimonialsPage() {
   return (
     <>
       <PageHero
-        eyebrow="06 — Testimonials"
+        eyebrow="05 — Testimonials"
         title="Testimonials"
         subtitle="What people I've actually worked with say — no quotes here until they're real."
       />
@@ -37,19 +38,37 @@ export default function TestimonialsPage() {
             ))}
           </div>
         ) : (
-          <div className="grid gap-8 md:grid-cols-3 max-w-5xl">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
             {testimonials.map((t) => (
-              <div key={t.name} className="border-4 border-ink bg-surface p-8 shadow-hard">
-                <Quote size={24} strokeWidth={2.5} className="text-accent mb-4" />
-                <p className="font-sans text-sm md:text-base leading-relaxed mb-6">
-                  &ldquo;{t.quote}&rdquo;
-                </p>
-                <p className="font-display font-bold uppercase tracking-tight text-sm">
-                  {t.name}
-                </p>
-                <p className="font-mono text-xs text-muted uppercase tracking-widest">
-                  {t.role}
-                </p>
+              <div
+                key={t.name}
+                className="border-4 border-ink bg-surface shadow-hard flex flex-col overflow-hidden"
+              >
+                {t.photo && (
+                  <div className="relative aspect-[4/5] border-b-4 border-ink">
+                    <Image
+                      src={t.photo}
+                      alt={t.name}
+                      fill
+                      className="object-cover"
+                      sizes="(min-width: 768px) 30vw, 90vw"
+                    />
+                  </div>
+                )}
+                <div className="p-8 flex flex-col flex-1">
+                  <Quote size={24} strokeWidth={2.5} className="text-accent mb-4" />
+                  <p className="font-sans text-sm md:text-base leading-relaxed mb-6 flex-1 whitespace-pre-line">
+                    &ldquo;{t.quote}&rdquo;
+                  </p>
+                  <div>
+                    <p className="font-display font-bold uppercase tracking-tight text-sm">
+                      {t.name}
+                    </p>
+                    <p className="font-mono text-xs text-muted uppercase tracking-widest">
+                      {t.role}
+                    </p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

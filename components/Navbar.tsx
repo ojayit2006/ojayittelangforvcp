@@ -9,7 +9,6 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/motivation", label: "Motivation" },
   { href: "/why-me", label: "Why Me" },
-  { href: "/track-record", label: "Track Record" },
   { href: "/vision", label: "Vision" },
   { href: "/budget", label: "Budget" },
   { href: "/testimonials", label: "Testimonials" },

@@ -67,59 +67,10 @@ export const whyMe = {
   ],
 };
 
-// REAL — verbatim from resume/activities. Keep this section factual only.
-export const trackRecord = {
-  eyebrow: "03 — Track Record",
-  title: "Track Record",
-  subtitle: "What I've actually held and delivered — not what I'm promising.",
-  timeline: [
-    {
-      role: "Events Head",
-      org: "CSI SPIT",
-      period: "2025 — Present",
-      bullets: [
-        "Owns end-to-end planning and execution of CSI SPIT's event calendar.",
-        "Coordinates logistics, speakers, and sponsors for flagship technical events.",
-      ],
-    },
-    {
-      role: "Head of Subcommittee",
-      org: "IEEE SPIT",
-      period: "2025 — Present",
-      bullets: [
-        "Leads a subcommittee within IEEE SPIT, working alongside CSI and IETE leadership.",
-      ],
-    },
-    {
-      role: "PR Subcommittee Member",
-      org: "IETE SPIT",
-      period: "2024 — 2025",
-      bullets: [
-        "Handled outreach and promotion for IETE SPIT's events and initiatives.",
-      ],
-    },
-    {
-      role: "Data Acquisition Team",
-      org: "Alumni Relations Cell, SPIT",
-      period: "2024 — 2025",
-      bullets: [
-        "Worked on building and maintaining SPIT's alumni data and outreach pipeline.",
-      ],
-    },
-  ],
-  achievements: [
-    "Winner — Fortune '26 Case Competition, DTU",
-    "Winner — Best UI/UX, SPIT SE Hackathon",
-    "Top 4 Teams — Synergy Hardware Hackathon, FRCRCE",
-    "2nd Runner-Up — Merge Mania Case Study Competition",
-    "Finalist — SCOE Hackathon",
-  ],
-};
-
 // DRAFT — these are proposed initiatives grounded in your real experience.
 // Sharpen or replace any that don't reflect what you actually intend to do.
 export const vision = {
-  eyebrow: "04 — Vision",
+  eyebrow: "03 — Vision",
   title: "My Vision",
   subtitle: "Five things I want to fix, not five things I want to say.",
   pillars: [
@@ -154,7 +105,7 @@ export const vision = {
 // PLACEHOLDER — do not publish fabricated figures. Replace allocation
 // values with real numbers once confirmed with the outgoing committee.
 export const budget = {
-  eyebrow: "05 — Budget",
+  eyebrow: "04 — Budget",
   title: "Budget & Transparency",
   subtitle:
     "A commitment to publish real numbers — not a guess dressed up as one.",
@@ -188,4 +139,45 @@ export const budget = {
 
 // PLACEHOLDER — replace with real quotes from real people before publishing.
 // Do not invent names, roles, or quotes here.
-export const testimonials: { name: string; role: string; quote: string }[] = [];
+export const testimonials: {
+  name: string;
+  role: string;
+  quote: string;
+  photo?: string;
+}[] = [
+  {
+    name: "Shivaji Deshmukh",
+    role: "Creatives Head, CSI SPIT 2025–26",
+    quote:
+      "Honestly, working with Ojayit during our core year showed me how reliable he really is. He pulled off some of our best events without sweating it, and he's definitely the right fit to help lead CSI as Vice Chairperson.",
+    photo: "/testimonial-shivaji.png",
+  },
+  {
+    name: "Pranav Sapkale",
+    role: "Vice Chairperson, IEEE SPIT 2025–26",
+    quote:
+      "When I think of CSI, I think Ojayit Telang. Every event I've seen CSI do this past tenure, I find that even from an outsider's perspective, and from my own dealings with the committee, Ojayit is a crucial part of it and is extremely pivotal in its dealings. In my eyes, I would find no better suitor for the position of VCP than Ojayit Omkar Jagdish Telang.",
+    photo: "/testimonial-pranav.png",
+  },
+  {
+    name: "Sampada Daware",
+    role: "Marketing Head, CSI SPIT 2025–26",
+    quote:
+      "I have had the pleasure of working with Ojayit as an event head; I think he did a great job, and honestly, he is a very approachable person who truly knows what he is doing, though he also goes out of his way to make new connections and bonds, which only enhances his great personality.",
+    photo: "/testimonial-sampada.png",
+  },
+  {
+    name: "Gurjeev Kohli",
+    role: "Marketing Head, CSI SPIT 2025–26",
+    quote:
+      "Ojayit is one of those people who makes an event work without making a big deal out of it. He's earned this, and Telang for VCP is an easy call for me.",
+    photo: "/testimonial-gurjeev.png",
+  },
+  {
+    name: "Prathamesh Sonawane",
+    role: "Social Media Head, CSI SPIT 2025–26",
+    quote:
+      "And the scent of the rain,\nwhen he first became Events Lead,\nis ingrained in my brain.\nAny human being still sane\nwould choose OJ to be VCP of CSI,\nand anyone asking why\nhas clearly never seen the guy.\nThrough every event, every deadline, every plea,\nOJ as VCP is how it's meant to be.",
+    photo: "/testimonial-prathamesh.png",
+  },
+];

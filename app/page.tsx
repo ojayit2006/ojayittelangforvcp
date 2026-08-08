@@ -10,10 +10,9 @@ import HeroCollage from "@/components/HeroCollage";
 const exploreCards = [
   { num: "01", href: "/motivation", title: "Motivation", teaser: "Why I'm running, in plain terms.", tint: "surface" as const, tilt: "left" as const },
   { num: "02", href: "/why-me", title: "Why Me", teaser: "Four reasons the role fits.", tint: "violet" as const, tilt: "right" as const },
-  { num: "03", href: "/track-record", title: "Track Record", teaser: "What I've actually held and shipped.", tint: "surface" as const, tilt: "right" as const },
-  { num: "04", href: "/vision", title: "My Vision", teaser: "Five things I want to fix.", tint: "red" as const, tilt: "left" as const },
-  { num: "05", href: "/budget", title: "Budget", teaser: "Where every rupee goes, published.", tint: "surface" as const, tilt: "left" as const },
-  { num: "06", href: "/testimonials", title: "Testimonials", teaser: "What people I've worked with say.", tint: "accent" as const, tilt: "right" as const },
+  { num: "03", href: "/vision", title: "My Vision", teaser: "Five things I want to fix.", tint: "red" as const, tilt: "left" as const },
+  { num: "04", href: "/budget", title: "Budget", teaser: "Where every rupee goes, published.", tint: "surface" as const, tilt: "left" as const },
+  { num: "05", href: "/testimonials", title: "Testimonials", teaser: "What people I've worked with say.", tint: "accent" as const, tilt: "right" as const },
 ];
 
 export default function Home() {
@@ -64,8 +63,8 @@ export default function Home() {
               <Button href="/vision" variant="primary">
                 Read My Vision
               </Button>
-              <Button href="/track-record" variant="outline">
-                See Track Record
+              <Button href="/testimonials" variant="outline">
+                See Testimonials
               </Button>
             </motion.div>
           </div>
@@ -85,7 +84,7 @@ export default function Home() {
             Campaign
           </h2>
           <p className="font-mono text-xs uppercase tracking-widest text-muted max-w-xs">
-            Six sections. No filler. Everything here is either verified or
+            Five sections. No filler. Everything here is either verified or
             clearly marked as a work in progress.
           </p>
         </div>

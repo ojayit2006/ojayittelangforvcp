@@ -26,7 +26,6 @@ export default function Footer() {
             {[
               ["/motivation", "Motivation"],
               ["/why-me", "Why Me"],
-              ["/track-record", "Track Record"],
               ["/vision", "My Vision"],
               ["/budget", "Budget"],
               ["/testimonials", "Testimonials"],
