@@ -402,18 +402,18 @@ export const budget = {
   subtitle:
     "The 11th edition of the SPIT Hackathon, bigger than ever, and the budget behind it.",
   stats: [
-    { label: "Total Prize Pool", value: "₹3,00,000", note: "₹2,50,000 Cash + ₹50,000 In-Kind" },
-    { label: "Cash Prizes", value: "₹2,50,000" },
-    { label: "In-Kind Value", value: "₹50,000" },
-    { label: "Total Event Value", value: "₹4,59,000" },
+    { label: "Total Prize Pool", value: "₹2,70,000", note: "₹2,25,000 Cash + ₹45,000 In-Kind" },
+    { label: "Cash Prizes", value: "₹2,25,000" },
+    { label: "In-Kind Value", value: "₹45,000" },
+    { label: "Total Event Value", value: "₹4,40,000" },
   ],
   groups: [
     {
       category: "Prize Pool",
-      value: 300000,
+      value: 270000,
       color: "#3987e5",
       items: [
-        { particular: "1st Prize", cash: "₹1,00,000", inKind: "₹20,000", total: "₹1,20,000" },
+        { particular: "1st Prize", cash: "₹75,000", inKind: "₹15,000", total: "₹90,000" },
         { particular: "2nd Prize", cash: "₹50,000", inKind: "₹15,000", total: "₹65,000" },
         { particular: "3rd Prize", cash: "₹35,000", inKind: "₹15,000", total: "₹50,000" },
         { particular: "Domain Winner 1", cash: "₹15,000", inKind: "-", total: "₹15,000" },
@@ -422,11 +422,11 @@ export const budget = {
         { particular: "Domain Winner 4", cash: "₹15,000", inKind: "-", total: "₹15,000" },
         { particular: "Best UI/UX", cash: "₹5,000", inKind: "-", total: "₹5,000" },
       ],
-      subtotal: { particular: "Prize Pool Subtotal", cash: "₹2,50,000", inKind: "₹50,000", total: "₹3,00,000" },
+      subtotal: { particular: "Prize Pool Subtotal", cash: "₹2,25,000", inKind: "₹45,000", total: "₹2,70,000" },
     },
     {
       category: "Food & Refreshments",
-      value: 104000,
+      value: 108000,
       color: "#d95926",
       items: [
         { particular: "Lunch (Day 1)", cash: "₹30,000", inKind: "-", total: "₹30,000" },
@@ -434,8 +434,10 @@ export const budget = {
         { particular: "Breakfast (Day 2)", cash: "₹12,000", inKind: "-", total: "₹12,000" },
         { particular: "Lunch (Day 2, Round 2 Finalists Only)", cash: "₹10,000", inKind: "-", total: "₹10,000" },
         { particular: "High Tea & Energy Drinks", cash: "₹22,000", inKind: "-", total: "₹22,000" },
+        { particular: "Food for Judges", cash: "₹2,000", inKind: "-", total: "₹2,000" },
+        { particular: "Food for Mentors", cash: "₹2,000", inKind: "-", total: "₹2,000" },
       ],
-      subtotal: { particular: "Food Subtotal", cash: "₹1,04,000", inKind: "-", total: "₹1,04,000" },
+      subtotal: { particular: "Food Subtotal", cash: "₹1,08,000", inKind: "-", total: "₹1,08,000" },
     },
     {
       category: "Accommodation",
@@ -479,16 +481,16 @@ export const budget = {
     },
     {
       category: "Hospitality",
-      value: 5500,
+      value: 7500,
       color: "#008300",
       items: [
         { particular: "Tokens of Appreciation for Judges", cash: "₹1,500", inKind: "-", total: "₹1,500" },
-        { particular: "Other Hospitality Charges", cash: "₹4,000", inKind: "-", total: "₹4,000" },
+        { particular: "Other Hospitality Charges", cash: "₹6,000", inKind: "-", total: "₹6,000" },
       ],
-      subtotal: { particular: "Hospitality Subtotal", cash: "₹5,500", inKind: "-", total: "₹5,500" },
+      subtotal: { particular: "Hospitality Subtotal", cash: "₹7,500", inKind: "-", total: "₹7,500" },
     },
   ],
-  grandTotal: { particular: "TOTAL", cash: "₹4,09,000", inKind: "₹50,000", total: "₹4,59,000" },
+  grandTotal: { particular: "TOTAL", cash: "₹3,95,000", inKind: "₹45,000", total: "₹4,40,000" },
 };
 
 // PLACEHOLDER — replace with real quotes from real people before publishing.
