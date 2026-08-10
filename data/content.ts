@@ -102,39 +102,100 @@ export const vision = {
   ],
 };
 
-// PLACEHOLDER — do not publish fabricated figures. Replace allocation
-// values with real numbers once confirmed with the outgoing committee.
+// REAL — finalized event budget. Do not alter categories, line items, or
+// figures without a matching update from the treasurer/outgoing committee.
 export const budget = {
-  eyebrow: "04 — Budget",
-  title: "Budget & Transparency",
+  eyebrow: "04 Budget",
+  title: "Budget",
   subtitle:
-    "A commitment to publish real numbers — not a guess dressed up as one.",
-  philosophy:
-    "Every rupee CSI SPIT spends should be visible to the people it's spent on. If elected, I'll publish an itemized breakdown for every major event within two weeks of it happening — not just a total, but where it went.",
-  disclaimer:
-    "The allocations below are placeholders for illustration only. Real figures will be published once confirmed with the outgoing committee and treasurer — this page will be updated to match.",
-  lineItems: [
+    "The 11th edition of the SPIT Hackathon, bigger than ever, and the budget behind it.",
+  stats: [
+    { label: "Total Prize Pool", value: "₹3,00,000", note: "₹2,50,000 Cash + ₹50,000 In-Kind" },
+    { label: "Cash Prizes", value: "₹2,50,000" },
+    { label: "In-Kind Value", value: "₹50,000" },
+    { label: "Total Event Value", value: "₹4,49,000" },
+  ],
+  groups: [
     {
-      category: "Technical Events & Workshops",
-      description: "Speaker fees, venue, and materials for flagship technical events.",
-      allocation: "—",
+      category: "Prize Pool",
+      value: 300000,
+      color: "#3987e5",
+      items: [
+        { particular: "1st Prize", cash: "₹1,00,000", inKind: "₹20,000", total: "₹1,20,000" },
+        { particular: "2nd Prize", cash: "₹50,000", inKind: "₹15,000", total: "₹65,000" },
+        { particular: "3rd Prize", cash: "₹35,000", inKind: "₹15,000", total: "₹50,000" },
+        { particular: "Domain Winner 1", cash: "₹15,000", inKind: "-", total: "₹15,000" },
+        { particular: "Domain Winner 2", cash: "₹15,000", inKind: "-", total: "₹15,000" },
+        { particular: "Domain Winner 3", cash: "₹15,000", inKind: "-", total: "₹15,000" },
+        { particular: "Domain Winner 4", cash: "₹15,000", inKind: "-", total: "₹15,000" },
+        { particular: "Best UI/UX", cash: "₹5,000", inKind: "-", total: "₹5,000" },
+      ],
+      subtotal: { particular: "Prize Pool Subtotal", cash: "₹2,50,000", inKind: "₹50,000", total: "₹3,00,000" },
     },
     {
-      category: "Hackathons & Competitions",
-      description: "Prizes, judging, and logistics for CSI-run competitions.",
-      allocation: "—",
+      category: "Food & Refreshments",
+      value: 94000,
+      color: "#d95926",
+      items: [
+        { particular: "Lunch (Day 1)", cash: "₹30,000", inKind: "-", total: "₹30,000" },
+        { particular: "Dinner (Day 1)", cash: "₹30,000", inKind: "-", total: "₹30,000" },
+        { particular: "Breakfast (Day 2)", cash: "₹12,000", inKind: "-", total: "₹12,000" },
+        { particular: "High Tea & Energy Drinks", cash: "₹22,000", inKind: "-", total: "₹22,000" },
+      ],
+      subtotal: { particular: "Food Subtotal", cash: "₹94,000", inKind: "-", total: "₹94,000" },
     },
     {
-      category: "Outreach & PR",
-      description: "Design, promotion, and cross-society coordination costs.",
-      allocation: "—",
+      category: "Accommodation",
+      value: 15000,
+      color: "#199e70",
+      items: [
+        { particular: "Sleeping Accommodation", cash: "₹15,000", inKind: "-", total: "₹15,000" },
+      ],
+      subtotal: null,
     },
     {
-      category: "Contingency",
-      description: "Buffer for unplanned costs across the year.",
-      allocation: "—",
+      category: "Stationery",
+      value: 14500,
+      color: "#c98500",
+      items: [
+        { particular: "ID Card Printing", cash: "₹2,500", inKind: "-", total: "₹2,500" },
+        { particular: "ID Card Straps / Lanyards", cash: "₹1,200", inKind: "-", total: "₹1,200" },
+        { particular: "Winner Certificates", cash: "₹2,000", inKind: "-", total: "₹2,000" },
+        { particular: "Posters & Printouts", cash: "₹3,000", inKind: "-", total: "₹3,000" },
+        { particular: "A4 Sheets / Printing Paper", cash: "₹1,000", inKind: "-", total: "₹1,000" },
+        { particular: "Pens", cash: "₹1,000", inKind: "-", total: "₹1,000" },
+        { particular: "Notepads / Writing Material", cash: "₹2,000", inKind: "-", total: "₹2,000" },
+        { particular: "Tape / Glue / Scissors", cash: "₹800", inKind: "-", total: "₹800" },
+        { particular: "File Folders / Documentation", cash: "₹1,000", inKind: "-", total: "₹1,000" },
+      ],
+      subtotal: { particular: "Stationery Subtotal", cash: "₹14,500", inKind: "-", total: "₹14,500" },
+    },
+    {
+      category: "Décor & Branding",
+      value: 25000,
+      color: "#d55181",
+      items: [
+        { particular: "Banner Drop", cash: "₹6,000", inKind: "-", total: "₹6,000" },
+        { particular: "Sponsor Branding Printouts", cash: "₹3,000", inKind: "-", total: "₹3,000" },
+        { particular: "Standees & Table Branding", cash: "₹5,500", inKind: "-", total: "₹5,500" },
+        { particular: "Stage & Venue Décor", cash: "₹8,000", inKind: "-", total: "₹8,000" },
+        { particular: "Welcome / Entrance Décor", cash: "₹2,000", inKind: "-", total: "₹2,000" },
+        { particular: "Misc. Printing & Branding", cash: "₹500", inKind: "-", total: "₹500" },
+      ],
+      subtotal: { particular: "Décor Subtotal", cash: "₹25,000", inKind: "-", total: "₹25,000" },
+    },
+    {
+      category: "Hospitality",
+      value: 5500,
+      color: "#008300",
+      items: [
+        { particular: "Tokens of Appreciation for Judges", cash: "₹1,500", inKind: "-", total: "₹1,500" },
+        { particular: "Other Hospitality Charges", cash: "₹4,000", inKind: "-", total: "₹4,000" },
+      ],
+      subtotal: { particular: "Hospitality Subtotal", cash: "₹5,500", inKind: "-", total: "₹5,500" },
     },
   ],
+  grandTotal: { particular: "TOTAL", cash: "₹3,99,000", inKind: "₹50,000", total: "₹4,49,000" },
 };
 
 // PLACEHOLDER — replace with real quotes from real people before publishing.
