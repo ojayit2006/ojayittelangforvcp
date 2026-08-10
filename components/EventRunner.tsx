@@ -8,9 +8,9 @@ import { visionRunner } from "@/data/content";
 const DINO_X = 72;
 const GRAVITY = 2200;
 const JUMP_V = 700;
-const SPEED_START = 340;
-const SPEED_STEP = 9;
-const SPEED_MAX = 640;
+const SPEED_START = 220;
+const SPEED_STEP = 5;
+const SPEED_MAX = 400;
 const GROUND_OFFSET = 46;
 const CELL = 2.4; // dino pixel size
 const CACTUS_CELL = 4;
@@ -506,29 +506,43 @@ export default function EventRunner() {
           )}
         </div>
 
-        {/* event roster */}
-        <div className="border-t-4 border-ink px-4 md:px-6 py-4 flex flex-wrap items-center gap-2">
-          {events.map((ev, i) => (
-            <span
-              key={ev.name}
-              className={`font-mono text-[10px] md:text-[11px] uppercase tracking-widest border-2 px-2.5 py-1 transition-colors duration-200 ${
-                cleared.includes(i)
-                  ? "bg-accent text-accent-fg border-accent font-bold"
-                  : "bg-transparent text-muted border-muted2"
-              }`}
-            >
-              {/* fixed-width slot so the row doesn't reflow when one lights up */}
-              <span className="inline-block w-3 mr-1">
-                {cleared.includes(i) ? "✓" : ""}
+        {/* event roster / timeline */}
+        <div className="border-t-4 border-ink px-4 md:px-6 py-4">
+          <p className="font-mono text-[10px] md:text-[11px] uppercase tracking-widest text-muted mb-3">
+            Timeline
+          </p>
+          <div className="flex flex-wrap items-start gap-2">
+            {events.map((ev, i) => (
+              <span
+                key={ev.name}
+                className={`flex flex-col gap-1 border-2 px-2.5 py-1.5 transition-colors duration-200 ${
+                  cleared.includes(i)
+                    ? "bg-accent text-accent-fg border-accent font-bold"
+                    : "bg-transparent text-muted border-muted2"
+                }`}
+              >
+                <span className="font-mono text-[10px] md:text-[11px] uppercase tracking-widest">
+                  {/* fixed-width slot so the row doesn't reflow when one lights up */}
+                  <span className="inline-block w-3 mr-1">
+                    {cleared.includes(i) ? "✓" : ""}
+                  </span>
+                  {ev.name}
+                </span>
+                <span
+                  className={`font-mono text-[9px] md:text-[10px] uppercase tracking-widest pl-4 ${
+                    cleared.includes(i) ? "text-accent-fg/70" : "text-muted2"
+                  }`}
+                >
+                  {ev.month}
+                </span>
               </span>
-              {ev.name}
-            </span>
-          ))}
-          {phase === "won" && (
-            <Badge color="red" rotate="right" className="ml-1">
-              Full Calendar Cleared
-            </Badge>
-          )}
+            ))}
+            {phase === "won" && (
+              <Badge color="red" rotate="right" className="ml-1">
+                Full Calendar Cleared
+              </Badge>
+            )}
+          </div>
         </div>
       </div>
     </div>

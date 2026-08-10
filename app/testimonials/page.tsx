@@ -11,9 +11,9 @@ export default function TestimonialsPage() {
   return (
     <>
       <PageHero
-        eyebrow="05 — Testimonials"
+        eyebrow="05. Testimonials"
         title="Testimonials"
-        subtitle="What people I've actually worked with say — no quotes here until they're real."
+        subtitle="What people I've actually worked with say, no quotes here until they're real."
       />
 
       <section className="px-6 md:px-10 py-16 md:py-24">
@@ -32,7 +32,7 @@ export default function TestimonialsPage() {
                 </p>
                 <p className="font-sans text-xs text-muted2 leading-relaxed">
                   Reserved for a real quote from someone you&apos;ve worked
-                  with — faculty, a club member, a teammate.
+                  with: faculty, a club member, a teammate.
                 </p>
               </div>
             ))}

@@ -44,7 +44,7 @@ export default function MotivationPage() {
             <div className="relative -rotate-1 border-4 border-ink shadow-hard overflow-hidden">
               <Image
                 src="/motivation-hackathon.png"
-                alt="CSI SPIT hackathon — team photos, late nights, and the SPIT Hack '26 win"
+                alt="CSI SPIT hackathon: team photos, late nights, and the SPIT Hack '26 win"
                 width={904}
                 height={1600}
                 className="w-full h-auto"

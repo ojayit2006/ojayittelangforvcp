@@ -7,7 +7,7 @@ const photos = [
   { src: "/hero-bookshelf.png", alt: "Ojayit Telang", rotate: "rotate-3" },
   { src: "/hero-neon.png", alt: "Ojayit Telang at an installation", rotate: "-rotate-2" },
   { src: "/hero-desk.png", alt: "Ojayit Telang at his desk", rotate: "-rotate-3" },
-  { src: "/hero-events.png", alt: "Ojayit Telang — CSI SPIT Events", rotate: "rotate-2" },
+  { src: "/hero-events.png", alt: "Ojayit Telang at CSI SPIT Events", rotate: "rotate-2" },
 ];
 
 export default function HeroCollage() {

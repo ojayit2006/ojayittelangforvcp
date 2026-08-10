@@ -14,7 +14,7 @@ export default function Footer() {
             {candidate.name}
           </p>
           <p className="font-sans text-sm text-muted max-w-xs">
-            Candidate for Vice Chairperson, {candidate.society} — {candidate.electionYear}.
+            Candidate for Vice Chairperson, {candidate.society}, {candidate.selectionYear}.
           </p>
         </div>
 
@@ -29,6 +29,7 @@ export default function Footer() {
               ["/vision", "My Vision"],
               ["/budget", "Budget"],
               ["/testimonials", "Testimonials"],
+              ["/support", "Feedback & Donations"],
             ].map(([href, label]) => (
               <li key={href}>
                 <Link href={href} className="text-text hover:text-accent transition-colors">
@@ -54,7 +55,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t-2 border-border-soft px-6 md:px-10 py-5 flex flex-col sm:flex-row gap-2 sm:gap-6 items-start sm:items-center font-mono text-[11px] uppercase tracking-widest text-muted">
-        <span>{candidate.society} Elections — {candidate.electionYear}</span>
+        <span>{candidate.society} Selections ({candidate.selectionYear})</span>
         <span className="hidden sm:inline">·</span>
         <span>Vote for the person already doing the work.</span>
       </div>
