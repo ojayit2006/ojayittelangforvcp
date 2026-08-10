@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
+import CompetitionBlast from "@/components/CompetitionBlast";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
 import { whyMe } from "@/data/content";
@@ -18,6 +19,10 @@ export default function WhyMePage() {
         subtitle={whyMe.subtitle}
       />
 
+      <section className="px-6 md:px-10 pt-14 md:pt-20 overflow-hidden">
+        <CompetitionBlast />
+      </section>
+
       <section className="px-6 md:px-10 py-16 md:py-24">
         <div className="grid gap-8 md:grid-cols-2">
           {whyMe.pillars.map((p, i) => (
@@ -32,12 +37,12 @@ export default function WhyMePage() {
             </Card>
           ))}
         </div>
+      </section>
 
-        <div className="mt-14">
-          <Button href="/testimonials" variant="primary">
-            See the Receipts
-          </Button>
-        </div>
+      <section className="px-6 md:px-10 pb-20 md:pb-28">
+        <Button href="/testimonials" variant="primary">
+          See the Receipts
+        </Button>
       </section>
     </>
   );

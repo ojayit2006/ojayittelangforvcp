@@ -102,6 +102,24 @@ export const vision = {
   ],
 };
 
+// The vision-page runner game. `tall` events are the flagship ones — they
+// render as the taller obstacles, so they're the harder jumps.
+export const visionRunner = {
+  eyebrow: "Bonus Round",
+  title: "Clear the Calendar",
+  subtitle:
+    "A full year of CSI events, one at a time, without tripping over any of them. Press space or tap to run.",
+  events: [
+    { name: "GitHub Workshop", tall: false },
+    { name: "Source Start", tall: false },
+    { name: "Codehousie", tall: false },
+    { name: "Workshop (TBD)", tall: false },
+    { name: "Tech Week", tall: true },
+    { name: "SPIT Hackathon", tall: true },
+    { name: "SE Hackathon", tall: true },
+  ],
+};
+
 // REAL — finalized event budget. Do not alter categories, line items, or
 // figures without a matching update from the treasurer/outgoing committee.
 export const budget = {

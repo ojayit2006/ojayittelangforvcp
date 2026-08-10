@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
+import EventRunner from "@/components/EventRunner";
+import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
-import { vision } from "@/data/content";
+import { vision, visionRunner } from "@/data/content";
 
 export const metadata: Metadata = { title: "My Vision" };
 
@@ -35,6 +37,19 @@ export default function VisionPage() {
             </div>
           </div>
         ))}
+      </section>
+
+      <section className="px-6 md:px-10 py-16 md:py-20 border-t-4 border-ink">
+        <Badge color="accent" rotate="left" className="mb-6">
+          {visionRunner.eyebrow}
+        </Badge>
+        <h2 className="font-display font-black uppercase tracking-tighter text-3xl md:text-5xl text-text mb-4">
+          {visionRunner.title}
+        </h2>
+        <p className="font-sans text-base md:text-lg text-muted leading-relaxed max-w-2xl mb-10">
+          {visionRunner.subtitle}
+        </p>
+        <EventRunner />
       </section>
 
       <section className="px-6 md:px-10 py-16 md:py-20">
