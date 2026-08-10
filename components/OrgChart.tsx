@@ -48,14 +48,23 @@ function DeptCard({ title, roleLabel, count }: { title: string; roleLabel: strin
   );
 }
 
+/* Tailwind needs whole class names, so the column counts a branch row can
+   take are spelled out rather than interpolated. */
+const branchCols: Record<number, string> = {
+  4: "grid-cols-4",
+  5: "grid-cols-5",
+  6: "grid-cols-6",
+};
+
 /* One branching generation: a horizontal rail spanning the middle 80% of
-   the row, with a short tick dropping onto each of the (fixed count-of-5)
-   children below it. Desktop only — collapses to a plain stack on mobile. */
+   the row, with a short tick dropping onto each child below it. The rail
+   assumes a single row, so every child must fit on one line — keep the
+   count within `branchCols`. Desktop only; collapses to a stack on mobile. */
 function BranchRow({ children }: { children: ReactNode[] }) {
   return (
     <div className="hidden md:block relative pt-6 w-full">
       <div className="absolute top-0 h-[3px] bg-ink" style={{ left: "10%", right: "10%" }} aria-hidden />
-      <div className="grid grid-cols-5 gap-3 lg:gap-4">
+      <div className={`grid ${branchCols[children.length] ?? "grid-cols-5"} gap-3 lg:gap-4`}>
         {children.map((child, i) => (
           <div key={i} className="flex flex-col items-center">
             <VStem h="h-4" />

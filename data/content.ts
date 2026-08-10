@@ -261,6 +261,7 @@ export const orgChart = {
       { title: "Chairperson" },
       { title: "Vice Chairpersons", count: 2 },
       { title: "Secretary" },
+      { title: "Head of Finance" },
       { title: "Head of Events" },
       { title: "Tech Heads", count: 3 },
     ],
