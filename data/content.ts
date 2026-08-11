@@ -537,6 +537,12 @@ export const testimonials: {
       "And the scent of the rain,\nwhen he first became Events Lead,\nis ingrained in my brain.\nAny human being still sane\nwould choose OJ to be VCP of CSI,\nand anyone asking why\nhas clearly never seen the guy.\nThrough every event, every deadline, every plea,\nOJ as VCP is how it's meant to be.",
     photo: "/testimonial-prathamesh.png",
   },
+  {
+    name: "Lekh Nayak",
+    role: "Head of Events, CSI SPIT 2025–26",
+    quote: "Ojayit always made me proud\nalways made me say\nMERA GOTA",
+    photo: "/testimonial-lekh.png",
+  },
 ];
 
 // PLACEHOLDER — page shell only. Real feedback and donation content and

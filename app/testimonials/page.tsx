@@ -38,7 +38,7 @@ export default function TestimonialsPage() {
             ))}
           </div>
         ) : (
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-6">
             {testimonials.map((t) => (
               <div
                 key={t.name}
@@ -51,20 +51,20 @@ export default function TestimonialsPage() {
                       alt={t.name}
                       fill
                       className="object-cover"
-                      sizes="(min-width: 768px) 30vw, 90vw"
+                      sizes="(min-width: 1024px) 17vw, (min-width: 640px) 45vw, 90vw"
                     />
                   </div>
                 )}
-                <div className="p-8 flex flex-col flex-1">
-                  <Quote size={24} strokeWidth={2.5} className="text-accent mb-4" />
-                  <p className="font-sans text-sm md:text-base leading-relaxed mb-6 flex-1 whitespace-pre-line">
+                <div className="p-8 lg:p-4 xl:p-6 flex flex-col flex-1">
+                  <Quote size={24} strokeWidth={2.5} className="text-accent mb-4 shrink-0" />
+                  <p className="font-sans text-sm md:text-base lg:text-[13px] xl:text-sm leading-relaxed mb-6 flex-1 whitespace-pre-line">
                     &ldquo;{t.quote}&rdquo;
                   </p>
                   <div>
-                    <p className="font-display font-bold uppercase tracking-tight text-sm">
+                    <p className="font-display font-bold uppercase tracking-tight text-sm lg:text-xs xl:text-sm">
                       {t.name}
                     </p>
-                    <p className="font-mono text-xs text-muted uppercase tracking-widest">
+                    <p className="font-mono text-xs lg:text-[10px] text-muted uppercase tracking-widest lg:tracking-wide">
                       {t.role}
                     </p>
                   </div>
